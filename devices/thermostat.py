@@ -10,11 +10,11 @@ class Thermostat(SmartDevice):
 
     def turn_on(self):
         self._set_on(True)
-        print(f"{self.get_name()} įjungta. Dabartinė temperatūra: {self.__current_temp}°C, Drėgmė: {self.__humidity}%")
+        print(f"{self.get_name()} ijungtas. Dabartinė temperatūra: {self.__current_temp}°C, Drėgmė: {self.__humidity}%")
 
     def turn_off(self):
         self._set_on(False)
-        print(f"{self.get_name()} išjungta.")
+        print(f"{self.get_name()} isjungtas.")
     
     def set_target_temp(self, temp: float):
         if 5 <= temp <= 35:
