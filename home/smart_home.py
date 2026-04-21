@@ -34,3 +34,6 @@ class SmartHome:
             "namas": self.__name,
             "kambariai": [room.get_status() for room in self.__rooms]  # Grąžina sąrašą kambarių su jų statusais
         }
+    
+    def get_rooms(self):
+        return self.__rooms

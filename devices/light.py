@@ -29,5 +29,6 @@ class Light(SmartDevice):
             "pavadinimas": self.get_name(),
             "kambarys": self.get_room(),
             "ar_ijungta": self.is_on(),
-            "ryskumas": self.__brightness
+            "ryskumas": self.__brightness,
+            "tipas": "light"
         }
