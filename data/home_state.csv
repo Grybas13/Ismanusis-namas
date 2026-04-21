@@ -1,3 +1,2 @@
 room,type,name,is_on,setting1,setting2
-Svetainė,light,Lubų lempa,False,100,
-Svetainė,thermostat,Termostatas,False,21.0,50
+Svetaine,light,Lubu lempa,False,100,

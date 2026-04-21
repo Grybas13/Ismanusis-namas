@@ -21,7 +21,8 @@ class Camera(SmartDevice):
     
     def start_recording(self):
         if not self.is_on():
-            self.turn_on()
+            print(f"{self.get_name()} nėra įjungta. Įrašymas negali prasidėti.")
+            return
         self.__is_recording = True
         print(f"{self.get_name()} pradeda įrašymą.")
 

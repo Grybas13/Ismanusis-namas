@@ -28,3 +28,9 @@ class Room:
             "kambarys": self.get_name(),
             "irenginiai": [device.get_status() for device in self.__devices]  # Grąžina sąrašą įrenginių su jų statusais
         }
+    
+    def get_device(self, device_name: str):
+        for device in self.__devices:
+            if device.get_name() == device_name:
+                return device
+        return None
